@@ -2,14 +2,14 @@ import Foundation
 import SwiftUI
 
 public extension View {
-  @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
+//  @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
   func nbNavigationDestination<D: Hashable, C: View>(for pathElementType: D.Type, @ViewBuilder destination builder: @escaping (D) -> C) -> some View {
     return modifier(DestinationBuilderModifier(typedDestinationBuilder: { AnyView(builder($0)) }))
   }
 }
 
 public extension View {
-  @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
+//  @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
   /// Associates a destination view with a binding that can be used to push
   /// the view onto a ``NBNavigationStack``.
   ///
@@ -56,7 +56,7 @@ public extension View {
     )
   }
 
-  @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
+//  @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
   /// Associates a destination view with a bound value for use within a
   /// navigation stack.
   ///
